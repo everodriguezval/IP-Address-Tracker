@@ -4,16 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+  <script src="./script.js" defer></script>
   <link rel="stylesheet" href="./style.css">
   <title>IP Address Tracker</title>
 </head>
 
 <body>
-    <div class="main-container">
-        <header>
+    <main>
+        <div class="main-container">
             <h1>IP Address Tracker</h1>
-        </header>
-        <main>
             <section class="search-input">
                 <form action="#" class="form-search-container">
                     <input type="text" placeholder="Search for any IP address or domain">
@@ -32,14 +37,14 @@
                 <h3>ISP</h3>
                 <p>Space</p>
             </section>
-            <section class="map-container">
+        </div>
+        
+        <div id="map"></div>
 
-            </section>
-        </main>
-        <footer>
-            <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
-            <p>Coded by <a href="#">Evelyn Valenzuela</a></p>
-        </footer>
-    </div>
+    </main>
+    <footer>
+        <p><small>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></small></p>
+        <p><small>Coded by <a href="#">Evelyn Valenzuela</a></small></p>
+    </footer>  
 </body>
 </html>
