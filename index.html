@@ -9,30 +9,37 @@
 </head>
 
 <body>
-    <header>
-        <h1>IP Address Tracker</h1>
-    </header>
-    <main>
-        <section class="search-input">
-            <form action="#">
-                <input type="text" placeholder="Search for any IP address or domain">
-            </form>
-        </section>
-        <section class="info-container">
-            <h3>IP ADDRESS</h3>
-            <p>1233445566</p>
-            <h3>LOCATION</h3>
-            <p>London</p>
-            <h3>TIMEZONE</h3>
-            <p>UTC</p> <!-- add offset value dynamically using the API -->
-            <h3>ISP</h3>
-            <p>Space</p>
-        </section>
-    </main>
+    <div class="main-container">
+        <header>
+            <h1>IP Address Tracker</h1>
+        </header>
+        <main>
+            <section class="search-input">
+                <form action="#" class="form-search-container">
+                    <input type="text" placeholder="Search for any IP address or domain">
+                    <div class="arrow-icon-search">
+                        <img src="./images/icon-arrow.svg" alt="arrow icon to search IP address">
+                    </div>
+                </form>
+            </section>
+            <section class="info-container">
+                <h3>IP ADDRESS</h3>
+                <p>1233445566</p>
+                <h3>LOCATION</h3>
+                <p>London</p>
+                <h3>TIMEZONE</h3>
+                <p>UTC</p> <!-- add offset value dynamically using the API -->
+                <h3>ISP</h3>
+                <p>Space</p>
+            </section>
+            <section class="map-container">
 
-  <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Evelyn Valenzuela</a>.
-  </footer>
+            </section>
+        </main>
+        <footer>
+            <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
+            <p>Coded by <a href="#">Evelyn Valenzuela</a></p>
+        </footer>
+    </div>
 </body>
 </html>

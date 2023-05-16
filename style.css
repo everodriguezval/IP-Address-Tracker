@@ -2,23 +2,82 @@
 
 :root {
     --very-dark-gray: hsl(0, 0%, 17%);
-    --dark-gray: hsl(0, 0%, 59%);
-    font-family: 'Rubik', sans-serif;
-    font-size: 18px;
+    --dark-gray: hsl(0, 0%, 59%);   
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-image: url(./images/pattern-bg-mobile.png);
     background-repeat: no-repeat;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
 }
 
 header h1 {
     color: #FFF;
     font-size: 1.2rem;
     font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-@media screen and (min-width: 1440px) {
+.main-container {
+    padding: 1.5rem;
+}
+
+.search-input input {
+    padding: 1rem 0.6rem;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+}
+
+.form-search-container {
+    position: relative;
+}
+
+.arrow-icon-search {
+    background-color: var(--very-dark-gray);
+    width: 3rem;
+    padding: 1.05rem 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.arrow-icon-search img {
+    display: block;
+    margin: 0 auto;
+}
+
+.info-container {
+    background-color: #FFF;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.info-container h3 {
+    color: var(--dark-gray);
+    font-size: 0.6rem;
+    letter-spacing: 1.2px;
+    margin-bottom: 0.5rem;
+}
+
+.info-container p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 900px) {
     body {
         background-image: url(./images/pattern-bg-desktop.png);
     }
