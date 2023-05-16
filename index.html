@@ -21,22 +21,32 @@
             <h1>IP Address Tracker</h1>
             <section class="search-input">
                 <form action="#" class="form-search-container">
-                    <input type="text" placeholder="Search for any IP address or domain">
+                    <input type="text" placeholder="Search for any IP address or domain" id="input-IP">
                     <div class="arrow-icon-search">
                         <img src="./images/icon-arrow.svg" alt="arrow icon to search IP address">
                     </div>
                 </form>
             </section>
-            <section class="info-container">
-                <h3>IP ADDRESS</h3>
-                <p>1233445566</p>
-                <h3>LOCATION</h3>
-                <p>London</p>
-                <h3>TIMEZONE</h3>
-                <p>UTC</p> <!-- add offset value dynamically using the API -->
-                <h3>ISP</h3>
-                <p>Space</p>
-            </section>
+            <div class="align-center-flex-container">
+                <section class="info-container">
+                    <div class="flex-item">
+                        <h3>IP ADDRESS</h3>
+                        <p>192.212.174.101</p>
+                    </div>
+                    <div class="flex-item">
+                        <h3>LOCATION</h3>
+                        <p>Brooklyn, NY, <span>10001</span></p>
+                    </div>
+                    <div class="flex-item">
+                        <h3>TIMEZONE</h3>
+                        <p>UTC -05:00</p> <!-- add offset value dynamically using the API -->
+                    </div>
+                    <div class="flex-item">
+                        <h3>ISP</h3>
+                        <p>SpaceX <span>Starlink</span></p>
+                    </div>
+                </section>
+            </div>
         </div>
         
         <div id="map"></div>
