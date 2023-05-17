@@ -7,7 +7,6 @@ const postcodeDOM = document.getElementById('postcode');
 const timezoneDOM = document.getElementById('timezone');
 const ispDOM = document.getElementById('isp'); 
 
-
 searchArrow.addEventListener("click", () => {
     const searchIP = searchInput.value;    
     const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_xFe0shdqurLZab4XzRQAk1M3RE8jx&ipAddress=${searchIP}`
