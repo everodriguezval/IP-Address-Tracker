@@ -26,7 +26,18 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marker = L.marker([51.5, -0.09]).addTo(map);
 
 
-// Make an API request
+// fetching default IP address
+fetch('https://api.ipify.org/?format=json')
+  .then(response => response.json())
+  .then(data => {
+    const ipAddressDefault = data.ip;
+    const urlDefault = `https://geo.ipify.org/api/v2/country,city?apiKey=at_xFe0shdqurLZab4XzRQAk1M3RE8jx&ipAddress=${ipAddressDefault}`
+    getData(urlDefault)
+  }) 
+  .catch(error => console.error(error));
+
+
+// make an API request
 function getData(url) {
     fetch(url)
         .then((response) => response.json())
@@ -37,15 +48,15 @@ function getData(url) {
             let { country, city, postalCode, timezone } = data.location
             ipAddressDOM.innerText = ipAddress;
             countryDOM.innerText = country;
-            cityDOM.innerText = city;
-            postcodeDOM.innerText = postalCode;
-            timezoneDOM.innerText = timezone;
+            cityDOM.innerText = `${city},`;
+            postcodeDOM.innerText = `${postalCode}`;
+            timezoneDOM.innerText = `UCT ${timezone}`;
             ispDOM.innerText = isp;
         })
         .catch((error) => console.log(error));
 }
 
-// my ip address
-const myIP = '192.168.1.75'
+
+
 
 
