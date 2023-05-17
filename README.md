@@ -12,7 +12,6 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
   - [Built with](#built-with)
 - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
@@ -26,12 +25,16 @@ Users should be able to:
 
 ### Screenshot
 
+#### Desktop version
 ![](./Screenshot_desktop_IP_address.jpg)
+
+#### Mobile version
+![](./mobile_IP_address.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/ip-address-tracker-solution-dDopzdhLr9)
-- Live Site URL: [Add live site URL here](https://everodriguezval.github.io/IP-Address-Tracker/)
+- Solution URL: [See my solution here](https://www.frontendmentor.io/solutions/ip-address-tracker-solution-dDopzdhLr9)
+- Live Site URL: [See Live Site here](https://everodriguezval.github.io/IP-Address-Tracker/)
 
 ## My process
 
@@ -41,8 +44,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS
-- [Styled Components](https://styled-components.com/) - For styles
+- Vanilla JS
 
 ## Author
 - Website - [Evelyn Valenzuela](https://evelynvalenzuela.com/)
