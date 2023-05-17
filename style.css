@@ -50,26 +50,26 @@ h1 {
     position: relative;
 }
 
-.arrow-icon-search {
-    background-color: var(--dark-blue);
+.search-button {
     width: 3rem;
-    padding: 1.05rem 0.5rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: var(--dark-blue);
+    background-image: url('./images/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: background-color 200ms;
+    border: none;
+    border-radius: 0 10px 10px 0;
     position: absolute;
     right: 0;
     top: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
-.arrow-icon-search:hover {
+.search-button:hover {
     background-color: var(--very-dark-gray);
-    cursor: pointer;
 }
 
-.arrow-icon-search img {
-    display: block;
-    margin: 0 auto;
-}
 
 .info-container {
     background-color: #FFF;
@@ -149,5 +149,9 @@ footer {
     
     .info-container div {
         padding: 0 6%;
+    }
+
+    #map { 
+        height: 70vh;
     }
 }
