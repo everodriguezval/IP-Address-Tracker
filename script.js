@@ -1,5 +1,12 @@
 const searchInput = document.getElementById('input-IP');
 const searchArrow = document.querySelector('.arrow-icon-search');
+const ipAddressDOM = document.getElementById('ip-address');
+const countryDOM = document.getElementById('country');
+const cityDOM = document.getElementById('city');
+const postcodeDOM = document.getElementById('postcode');
+const timezoneDOM = document.getElementById('timezone');
+const ispDOM = document.getElementById('isp'); 
+
 
 searchArrow.addEventListener("click", () => {
     const searchIP = searchInput.value;    
@@ -25,6 +32,15 @@ function getData(url) {
         .then((response) => response.json())
         .then((data) => {
             console.log(data)
+            let ipAddress = data.ip;
+            let isp = data.isp;
+            let { country, city, postalCode, timezone } = data.location
+            ipAddressDOM.innerText = ipAddress;
+            countryDOM.innerText = country;
+            cityDOM.innerText = city;
+            postcodeDOM.innerText = postalCode;
+            timezoneDOM.innerText = timezone;
+            ispDOM.innerText = isp;
         })
         .catch((error) => console.log(error));
 }
