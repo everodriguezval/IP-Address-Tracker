@@ -1,11 +1,10 @@
 const searchInput = document.getElementById('input-IP');
 const searchArrow = document.querySelector('.arrow-icon-search');
 
-searchInput.addEventListener("input", (e) => {
-    console.log(e.target.value)
-})
 searchArrow.addEventListener("click", () => {
-    console.log('Arrow clicked')
+    const searchIP = searchInput.value;    
+    const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_xFe0shdqurLZab4XzRQAk1M3RE8jx&ipAddress=${searchIP}`
+    getData(url);
 })
 
 // initialize the map and set its view to our chosen geographical coordinates and a zoom level
@@ -18,3 +17,19 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var marker = L.marker([51.5, -0.09]).addTo(map);
+
+
+// Make an API request
+function getData(url) {
+    fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data)
+        })
+        .catch((error) => console.log(error));
+}
+
+// my ip address
+const myIP = '192.168.1.75'
+
+
