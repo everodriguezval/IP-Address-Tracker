@@ -9,7 +9,7 @@
      crossorigin=""/>
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-     crossorigin=""></script>
+     crossorigin="" defer></script>
   <script src="./script.js" defer></script>
   <link rel="stylesheet" href="./style.css">
   <title>IP Address Tracker</title>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="flex-item">
                         <h3>LOCATION</h3>
-                        <p><span id="city"></span> <span id="country"></span> <span id="postcode"></span></p>
+                        <p><span id="city"></span> <span id="country"></span><span id="postcode"></span></p>
                     </div>
                     <div class="flex-item">
                         <h3>TIMEZONE</h3>
@@ -48,7 +48,7 @@
                 </section>
             </div>
         </div>
-        
+        <!-- map to track IP address -->
         <div id="map"></div>
 
     </main>

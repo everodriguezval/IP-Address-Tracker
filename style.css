@@ -96,13 +96,12 @@ h1 {
 
 #map { 
     height: 50vh; 
-    margin-bottom: 2rem; 
+    margin-bottom: 1rem; 
     z-index: 1;
 }
 
 footer {
     text-align: center;
-    margin-bottom: 1rem;
 }
 
 
@@ -122,10 +121,6 @@ footer {
         text-align: left;
         display: flex;
         width: 60vw; 
-    }
-
-    .info-container span {
-        display: block;
     }
 
     .info-container p {
